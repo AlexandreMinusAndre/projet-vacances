@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Les vacances chez Gustave</title>
 </head>
 <body>
+    <header>
+        <div>
+            <img src="./img/logo.png" alt="logo">
+            <h1>Les Vacances Chez Gustaves</h1>
+
+            <button>Accueil</button>
+            <button>Se connecter</button>
+        </div>
+
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="desktop">
+                <img src="img/img1.jpg" alt="">
+                <img src="img/img2.jpg" alt="">
+                <img src="img/img3.jpg" alt="">
+                <img src="img/img4.jpg" alt="">
+                <img src="img/img5.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <form class="search-inputs">
+                <div>
+                    <label for="destination">Où allez-vous ?</label>
+                    <input type="text" name="destination" id="destination">
+                </div>
+                <div>
+                    <label for="depart">Départ</label>
+                    <input type="text" name="depart" id="depart">
+                    <label for="arrival">Arrivée</label>
+                    <input type="text" name="arrival" id="arrival">
+                </div>
+                <div>
+                    <label for="adults">Adultes</label>
+                    <input type="number" name="adults" id="adults">
+                    <label for="childs">Enfants</label>
+                    <input type="number" name="childs" id="childs">
+                    <label for="rooms">Chambre</label>
+                    <select name="rooms" id="rooms" size="20">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select>
+                </div>
+
+
+
+                <button type="submit">Rechercher</button>
+            </form>
+            <div>
+
+            </div>
+        </div>
+
+    </main>
     
+    <footer>
+    </footer>
 </body>
 </html>
