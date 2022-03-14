@@ -65,6 +65,10 @@ nav button:hover{
 /* Main */
 .title-user{
     padding: 20px;
+    border-bottom: 2px solid #B8944F;
+}
+.info-user{
+    border-right:2px solid #B8944F;
 }
 /* Footer (bottom page) */
 
