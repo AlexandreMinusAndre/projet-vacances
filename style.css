@@ -59,10 +59,17 @@ nav button:hover{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: #B8944F;
+}
+a:hover{
+    color: #fff;
+}
 /* MAIN */
 
 h2, h3 {
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
     font-weight: 600;
     font-family: 'Karla', serif;
 }
@@ -158,20 +165,29 @@ p{
 
 .card{
     width: 15rem;
-}
+}   
+
 .card-deck{
+    white-space:nowrap;
+    width: 100%;
+    overflow-x: auto;
     display: inline-flex;
+    justify-content: space-between;
 }
 .best {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .best span {
+    user-select: none;
+    color: #fff;
     position: absolute;
     opacity: 100%;
-    bottom: 100%;
-    right: 100%;
+    bottom: 45%;
+    right: 28%;
+    text-transform: uppercase;
 }
 
 .best div {
@@ -186,6 +202,19 @@ p{
     height: 210px;
     width: 250px;
     object-fit: cover;
+}
+
+.ov {
+    opacity: 0;
+    background-color: #000000BF !important;
+    top: 0;
+    position: absolute !important;
+    transition: ease 150ms;
+}
+
+.ov:hover{
+    cursor: pointer;
+    opacity: 100%;
 }
 
 /* Footer (bottom page) */
