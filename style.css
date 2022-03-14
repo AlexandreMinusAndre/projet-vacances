@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Gabriela&family=Karla:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header, NavBar */
+
+header {
+    max-height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #B8944F;
+}
+
+header img {
+    margin-left: 5px;
+    width: 110px;
+    height: 110px;
+}
+
+nav{
+    height: 100%;
+}
+
+nav button {
+    font-family: 'Gabriela', serif;
+    color: #B8944F;
+    font-size: 15px;
+    border: none;
+    background: none;
+    padding: 5px 0px;
+    width: 170px;
+    border-radius: 50px;
+    border: 2px solid #B8944F;
+    transition: 200ms ease;
+    margin: auto 20px;
+}
+
+nav button:hover{
+    background: #B8944F;
+    color: #FFF;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Gabriela', serif;
+    color: #B8944F;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* MAIN */
+
+h2, h3 {
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    font-family: 'Karla', serif;
+}
+
+h2 {
+    margin: 10px auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.search-inputs {
+    background-color: #B8944F;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+    height: 20vh;
+    position: relative;
+}
+
+.search-inputs div {
+    display: flex;
+    flex-direction: column;
+    margin: auto 15px;
+}
+
+.search-inputs .time {
+    flex-direction: row;
+}
+
+.search-inputs .options {
+    flex-direction: row;
+}
+
+.search-inputs label {
+    user-select: none;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: #FFF;
+}
+
+.search-inputs input {
+    width: 50px;
+    height: 30px;
+}
+.search-inputs select {
+    height: 30px;
+}
+
+.search-inputs button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    border: none;
+    color: #B8944F;
+    background-color: #FFF;
+    padding: 5px 10px;
+    width: 140px;
+    border-radius: 50px;
+    margin-right: 20px;
+    transition: ease 150ms;
+}
+
+.search-inputs button:hover {
+    opacity: 70%;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    vertical-align: top;
+}
+
+.card{
+    width: 15rem;
+}
+.card-deck{
+    display: inline-flex;
+}
+.best {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best span {
+    position: absolute;
+    opacity: 100%;
+    bottom: 100%;
+    right: 100%;
+}
+
+.best div {
+    position: relative;
+    height: 210px;
+    width: 250px;
+    background-color: #BFBFBF;
+}
+
+.best img {
+    position: relative;
+    height: 210px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/* Footer (bottom page) */
+
+footer{
+    margin-top: 200px;
+    background-color: #B8944F;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer div {
+    margin: 20px auto;
+}
