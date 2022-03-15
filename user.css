@@ -1,67 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Gabriela&family=Karla:wght@200;300;400;500;600;700&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Gabriela';
-}
-
-
-/* Header, NavBar */
-
-header {
-    max-height: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #B8944F;
-}
-
-header img {
-    margin-left: 5px;
-    width: 110px;
-    height: 110px;
-}
-
-nav{
-    height: 100%;
-}
-
-nav button {
-    cursor: pointer;
-    font-family: 'Gabriela', serif;
-    color: #B8944F;
-    font-size: 15px;
-    border: none;
-    background: none;
-    padding: 5px 0px;
-    width: 170px;
-    border-radius: 50px;
-    border: 2px solid #B8944F;
-    transition: 200ms ease;
-    margin: auto 20px;
-}
-
-nav button:hover{
-    background: #B8944F;
-    color: #fff;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    font-family: 'Gabriela', serif;
-    color: #B8944F;
-    font-size: 18px;
-    margin: 0;
-}
-
-
 /* Main */
 .title-user{
     padding: 20px;
@@ -69,7 +5,7 @@ nav button:hover{
 }
 .info-user{
     width: 15rem;
-    height: 20rem;
+    height: 40rem;
     padding: 15px;
     border-right:2px solid #B8944F;
 }
@@ -107,6 +43,7 @@ input{
     color: #000;
     padding-bottom: 32px;
 }
+
 .button-confirm{
     cursor: pointer;
     font-family: 'Gabriela', serif;
@@ -128,7 +65,6 @@ input{
 /* Footer (bottom page) */
 
 footer{
-    margin-top: 200px;
     background-color: #B8944F;
     height: 250px;
     display: flex;
