@@ -62,20 +62,3 @@ input{
     background: #B8944F;
     color: #fff;
 }
-/* Footer (bottom page) */
-
-footer{
-    background-color: #B8944F;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-footer span {
-    color: #fff;
-}
-
-footer div {
-    margin: 20px auto;
-}

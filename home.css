@@ -95,17 +95,6 @@ p{
     width: 80%;
 }
 
-.carousel-item {
-    height: 100vh;
-}
-
-.carousel-inner img {
-    object-fit: cover;
-    position: relative;
-    height: 100%;
-    vertical-align: top;
-}
-
 .card{
     width: 15rem;
 }   

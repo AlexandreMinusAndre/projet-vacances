@@ -1,5 +1,3 @@
-const user = document.querySelector('.user');
-const menu = document.querySelector('.menu');
 const menuBtn = document.querySelectorAll('nav button');
 const connectionOverlay = document.querySelector('.connection-overlay');
 menuBtn.forEach((el)=>{
@@ -11,7 +9,5 @@ menuBtn.forEach((el)=>{
         }
     });
 });
-document.onclick = function(e) {
-};
 
 //# sourceMappingURL=index.672d4772.js.map
