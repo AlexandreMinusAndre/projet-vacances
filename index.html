@@ -12,11 +12,18 @@
     <header>
         <div class="logo">
             <img src="./img/logo.png" alt="logo">
-            <h1>Les Vacances Chez Gustaves</h1>
+            <h1>Les Vacances Chez Gustave</h1>
         </div>
         <nav>
             <button>Accueil</button>
-            <button>Se connecter</button>
+            <button class="connect">Se connecter</button>
+            <div class="user">
+                <!-- <img src="img/user.jpg" alt="User profile"> -->
+                <div class="menu">
+                    <div class="profil">Profil</div>
+                    <div class="disconnect">Se déconnecter</div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -47,12 +54,27 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        
+        <div class="connection-overlay">
+            <div class="box">
+                <h3>Veuillez-vous connecter !</h3>
+                <form>
+                    <div class="email">
+                        <label for="email">Entrez votre adresse e-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="password">
+                        <label for="password">Entrez votre mot de passe</label>
+                        <input type="password" name="password" id="password" placeholder="Mot de passe">
+                    </div>
+                    <button type="submit">Se connecter</button>
+                </form>
+            </div>            
+        </div>
         <div class="content">
             <div>
                 <h2>Commencez votre recherche pour un séjour en toute sérénité</h2>
                 <form class="search-inputs">
-                    <div>
+                    <div class="destination">
                         <label for="destination">Où allez-vous ?</label>
                         <input type="text" name="destination" id="destination">
                     </div>
@@ -158,8 +180,8 @@
             </div>
         </div>
         <iframe
-        width="600"
-        height="450"
+        width="100%"
+        height="600px"
         style="border:0"
         loading="lazy"
         allowfullscreen
