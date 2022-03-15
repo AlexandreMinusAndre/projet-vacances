@@ -16,3 +16,9 @@ menuBtn.forEach(el => {
         }
     })
 })
+
+document.onclick = function(e) {
+    if (){
+
+    }
+}
