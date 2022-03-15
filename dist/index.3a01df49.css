@@ -58,10 +58,6 @@ nav button:hover{
     margin: 0;
 }
 
-.connect {
-    display: none;
-}
-
 .user {
     display: inline;
     position: relative;
@@ -108,9 +104,17 @@ nav button:hover{
 
 .menu .disconnect:hover {
     color: #FFF;
-    background-color: #FF0000;
+    background-color: #B8944F;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.active {
+    display: inline;
+}
+
+.activef {
+    display: flex;
 }
 
 /* Footer (bottom page) */

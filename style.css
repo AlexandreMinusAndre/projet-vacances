@@ -115,6 +115,10 @@ nav button:hover{
     display: inline;
 }
 
+.activef {
+    display: flex;
+}
+
 
 /* Footer (bottom page) */
 
