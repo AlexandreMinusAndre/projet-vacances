@@ -1,0 +1,154 @@
+.connect {
+    display: none;
+}
+
+/* MAIN */
+
+h2, h3 {
+    margin: 15px 0 0;
+    font-weight: 600;
+    font-family: 'Karla', serif;
+}
+
+h2 {
+    margin: 10px auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Search inputs */
+
+.search-inputs {
+    background-color: #B8944F;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+    height: 20vh;
+    position: relative;
+}
+
+.search-inputs div {
+    display: flex;
+    flex-direction: column;
+    margin: auto 15px;
+}
+
+.search-inputs .time {
+    flex-direction: row;
+}
+
+.search-inputs .options {
+    flex-direction: row;
+}
+
+.search-inputs label {
+    user-select: none;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: #FFF;
+}
+
+.search-inputs input {
+    width: 50px;
+    height: 30px;
+}
+.search-inputs select {
+    height: 30px;
+}
+
+.search-inputs button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    border: none;
+    color: #B8944F;
+    background-color: #FFF;
+    padding: 5px 10px;
+    width: 140px;
+    border-radius: 50px;
+    margin-right: 20px;
+    transition: ease 150ms;
+}
+
+.search-inputs button:hover {
+    opacity: 70%;
+}
+
+.destination input{
+    width: 150px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.card{
+    width: 15rem;
+}   
+
+.card-deck{
+    white-space:nowrap;
+    width: 100%;
+    overflow-x: auto;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.best {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best span {
+    user-select: none;
+    color: #fff;
+    position: absolute;
+    opacity: 100%;
+    bottom: 45%;
+    right: 28%;
+    text-transform: uppercase;
+}
+
+.best div {
+    position: relative;
+    height: 210px;
+    width: 250px;
+    background-color: #BFBFBF;
+}
+
+.best img {
+    position: relative;
+    height: 210px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.ov {
+    opacity: 0;
+    background-color: #000000BF !important;
+    top: 0;
+    position: absolute !important;
+    transition: ease 150ms;
+}
+
+.ov:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+iframe {
+    margin-top: 150px;
+}

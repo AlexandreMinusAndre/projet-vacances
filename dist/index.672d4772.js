@@ -1,5 +1,3 @@
-const user = document.querySelector('.user');
-const menu = document.querySelector('.menu');
 const menuBtn = document.querySelectorAll('nav button');
 const connectionOverlay = document.querySelector('.connection-overlay');
 menuBtn.forEach((el)=>{
@@ -10,10 +8,18 @@ menuBtn.forEach((el)=>{
             else connectionOverlay.classList.remove('activef');
         }
     });
-}) // document.onclick = function(e) {
- //     if (){
- //     }
- // }
-;
+});
+const buttonConnection = document.querySelector('.connection');
+buttonConnection.forEach((e)=>{
+    e.addEventListener('click', ()=>{
+        if (localStorage.getItem('jwt')) window.location.href = 'home.html';
+        else Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<a href="">Why do I have this issue?</a>'
+        });
+    });
+});
 
 //# sourceMappingURL=index.672d4772.js.map

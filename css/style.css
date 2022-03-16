@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Gabriela&family=Karla:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gabriela", serif;
+}
+
+
+/* Header, NavBar */
+
+header {
+    max-height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #B8944F;
+}
+
+header img {
+    margin-left: 5px;
+    width: 110px;
+    height: 110px;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+}
+
+nav button {
+    font-family: 'Gabriela', serif;
+    color: #B8944F;
+    font-size: 15px;
+    border: none;
+    background: none;
+    padding: 5px 0px;
+    width: 170px;
+    border-radius: 50px;
+    border: 2px solid #B8944F;
+    transition: 200ms ease;
+    margin: auto 20px;
+}
+
+nav button:hover{
+    background: #B8944F;
+    color: #FFF;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Gabriela', serif;
+    color: #B8944F;
+    font-size: 18px;
+    margin: 0;
+}
+
+.user {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.user img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: none;
+    box-shadow: 0px 10px 15px #00000057;
+    z-index: 2;
+    position: absolute;
+    background: #fff;
+    right: 10px;
+    bottom: -110px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.menu div {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    padding: 15px;
+    transition: ease 150ms;
+}
+
+.menu .profil:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #000;
+    color: #FFF;
+}
+
+.menu .disconnect:hover {
+    color: #FFF;
+    background-color: #B8944F;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    vertical-align: top;
+}
+
+.active {
+    display: inline;
+}
+
+.activef {
+    display: flex;
+}
+
+.title-index{
+    text-align: center;
+    margin: 25px;
+}
+.card{
+    border: 2px solid #B8944F;
+    width: 25rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+/* Footer (bottom page) */
+
+footer{
+    background-color: #B8944F;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer div {
+    margin: 20px auto;
+}
