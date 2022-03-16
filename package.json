@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel ./html/index.html",
-    "home": "parcel home.html"
+    "dev": "parcel ./html/reservation.html"
   },
   "repository": {
     "type": "git",
