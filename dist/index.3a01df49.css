@@ -132,6 +132,10 @@ nav button:hover{
     margin: 25px;
 }
 
+.txt-index{
+    text-align: center;
+}
+
 .card{
     border: 2px solid #B8944F;
     width: 25rem;
@@ -139,9 +143,15 @@ nav button:hover{
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-left: 5px;
+}
+
+.partenaire-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer (bottom page) */
