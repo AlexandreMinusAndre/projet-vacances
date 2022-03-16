@@ -1,3 +1,17 @@
+nav button {
+    font-family: 'Gabriela', serif;
+    color: #B8944F;
+    font-size: 15px;
+    border: none;
+    background: none;
+    padding: 5px 0px;
+    width: 170px;
+    border-radius: 50px;
+    border: 2px solid #B8944F;
+    transition: 200ms ease;
+    margin: auto 20px;
+}
+
 /* Main */
 .title-user{
     padding: 20px;
