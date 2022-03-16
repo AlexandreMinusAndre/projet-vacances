@@ -17,7 +17,7 @@ const loginRequest = () => {
         const token = localStorage.getItem('jwt');
 
         if(token) {
-            window.open('./home.html');
+            window.location.href = 'home.html';
         }
     })
 
