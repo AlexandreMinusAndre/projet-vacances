@@ -15,8 +15,7 @@
 
 .connection-overlay .box{
     background-color: #FFF;
-    /* transform: translateY(-150%); */
-    transition-duration: 1s;
+    transform: translateY(-150%);
     transition: 150ms ease;
     display: flex;
     flex-direction: column;
