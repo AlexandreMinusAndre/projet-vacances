@@ -17,8 +17,8 @@ menuBtn.forEach(el => {
     })
 })
 
-document.onclick = function(e) {
-    if (){
+// document.onclick = function(e) {
+//     if (){
 
-    }
-}
+//     }
+// }

@@ -10,8 +10,10 @@ menuBtn.forEach((el)=>{
             else connectionOverlay.classList.remove('activef');
         }
     });
-});
-document.onclick = function(e) {
-};
+}) // document.onclick = function(e) {
+ //     if (){
+ //     }
+ // }
+;
 
 //# sourceMappingURL=index.672d4772.js.map
