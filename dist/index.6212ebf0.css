@@ -15,14 +15,16 @@
 
 .connection-overlay .box{
     background-color: #FFF;
-    transform: translateY(-150%);
-    transition-duration: 1s;
-    transition: 150ms ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px;
     border-radius: 5px;
+}
+
+.box{
+    transform: translateY(-140%);
+    transition: 150ms ease;
 }
 
 .box h3 {
