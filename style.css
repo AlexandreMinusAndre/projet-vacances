@@ -84,7 +84,7 @@ nav button:hover{
     position: absolute;
     background: #fff;
     right: 10px;
-    bottom: -110px;
+    bottom: -175px;
     width: 150px;
     border-radius: 5px;
 }
@@ -96,19 +96,19 @@ nav button:hover{
     transition: ease 150ms;
 }
 
-.menu .profil:hover {
+.menu .profil:hover, .menu .disconnect:hover, .menu .parrain:hover{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #000;
+    background-color: #B8944F;
     color: #FFF;
 }
 
-.menu .disconnect:hover {
+/* .menu .disconnect:hover {
     color: #FFF;
     background-color: #B8944F;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}
+} */
 
 .carousel-item {
     height: 100vh;
@@ -139,6 +139,7 @@ nav button:hover{
 .card{
     border: 2px solid #B8944F;
     width: 25rem;
+    text-align: left;
 }
 .container{
     display: flex;

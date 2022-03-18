@@ -3,10 +3,10 @@ const connectionOverlay = document.querySelector('.connection-overlay');
 const form = document.querySelector('.box form');
 
 menuBtn.forEach(el => {
-    const r = document.querySelector('.connection-overlay .box');
+    const r = document.querySelector('.box');
     el.addEventListener('click', () => {
         if (el === menuBtn[0]){
-            window.location.href='index.html';
+            window.location.href='index.html'; 
         } else if (el === menuBtn[1]){
             r.classList.toggle('active-connection');
             if (!connectionOverlay.classList.contains('activef')){
@@ -18,15 +18,30 @@ menuBtn.forEach(el => {
     })
 })
 
-// form.addEventListener('submit', () => {
-//     if(localStorage.getItem('jwt')){
-//         window.location.href = 'home.html';
-//     } else {
-//         Swal.fire({
-//             icon: 'error',
-//             title: 'Oops...',
-//             text: 'Vous ne pouvez pas vous connecter !'
-//           })
-//     }
-// })
 
+const input = document.querySelector('input')
+
+form.onsubmit = (e) => {
+  e.preventDefault()
+  if (!input.value) {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Vous ne pouvez pas vous connecter !'
+      })
+  }
+}
+
+
+
+        function openTicket(){
+            document.getElementById("hide").style.display = "flex";
+        }
+        function closeTicket(){
+            document.getElementById("hide").style.display = "none";
+            // Swal.fire(
+            //     'Demande de parrainage envoyée !',
+            //     'Vous allez recevoir un mail de confirmation de votre parrainage.',
+            //     'success'
+            // )
+        }
