@@ -15,54 +15,78 @@
             <h1>Les Vacances Chez Gustave</h1>
         </div>
         <nav>
-            <button>Accueil</button>
+            <button class="default">Accueil</button>
             <button class="connect">Se connecter</button>
+            <div class="user">
+                <img src="../img/userColor.png" alt="User profile">
+                <div class="menu">
+                    <div class="profil">Profil</div>
+                    <div class="disconnect">Se déconnecter</div>
+                </div>
+            </div>
+            <div class="mobile-btn">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
     <main>
+        <div class="ov-mob"></div>
+        <div class="mobile-menu">
+            <div class="box-mobile">
+                <div class="close-btn">
+                    <img src="../img/xbut.svg" alt="close button">
+                </div>
+                <div class="accueil">
+                    <span class="default">Accueil</span>
+                </div>
+                <div class="user-mobile">
+                    <span class="profil">Profil</span>
+                </div>
+                <div class="disconnect">
+                    <span>Se déconnecter</span>
+                </div>
+            </div>
+        </div>
         <div class="title-user">
             <h1>Mon compte</h1>
             <p>Test Pourvoir</p>
         </div>
-
-        <div class="info-user">
-            <h2>Mes informations</h2>
-            <div class="txt-info">
-                <p>Mes commandes</p>
-                &#160;
-                <p>Mes réclamations</p>
-                &#160;
-                <p>Mes réclamations</p>
+        <div class="user-content">
+            <div class="info-user">
+                <h2>Mes informations</h2>
+                <div class="txt-info">
+                    <p>Mes commandes</p>
+                    <p>Mes réclamations</p>
+                    <p>Mes réclamations</p>
+                </div>
             </div>
+            <form class="form-user">
+                <h2>Mes informations</h2>
+                <div class="name-user">
+                    <div class="box-input">
+                        <input type="text" name="name" id="name" autocomplete="off" autofocus required>
+                        <label for="name" class="floating-input">Nom</label>
+                    </div>
+    
+                    <div class="box-input">
+                        <input type="email" name="email" id="email" autocomplete="off" autofocus required>
+                        <label for="email" class="floating-input">Email</label>
+                    </div>
+                </div>
+                <h2>Changement de mot de passe</h2>
+                <div class="box-input">
+                    <input type="password" name="password" id="password" autocomplete="off" autofocus required>
+                    <label for="password" class="floating-input">Mot de passe actuel</label>
+                </div>
+                <div class="box-input">
+                    <input type="password" name="passwordConfirmation" id="passwordConfirmation" autocomplete="off" autofocus required>
+                    <label for="passwordConfirmation" class="floating-input">Nouveau mot de passe</label>
+                </div>
+                <button>Confirmer</button>
+            </form>
         </div>
-
-
-        <form class="form-user" action="">
-            <h2>Mes informations</h2>
-            &#160;
-            <div class="name-user">
-                <label for="text">Nom</label>
-                <input type="text">
-
-                <label for="">Email</label>
-                <input type="text">
-        
-            </div>
-            
-
-            <h2>Changement de mot de passe</h2>
-            &#160;
-            <div>
-                <label for="text">Mot de passe actuel</label>
-                <input type="text">
-            </div>
-            <div>
-                <label for="text">Nouveau mot de passe</label>
-                <input type="text">
-            </div>
-            &#160;
-            <button class="button-confirm">Confirmer</button>
-        </form>
     </main>
     <footer>
         <div>
@@ -70,5 +94,6 @@
         </div>
     </footer>
     <script src="../js/script.js"></script>
+    <script src="../js/user.js"></script>
 </body>
 </html>
