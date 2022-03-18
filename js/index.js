@@ -15,10 +15,11 @@ connectBtn.forEach(btn => {
     const r = document.querySelector('.box');
     btn.addEventListener('click', () => {
         if (btn.classList.contains('connect')){
-            if (!connectionOverlay.classList.contains('active-connection')){
-                connectionOverlay.classList.add('active-connection');
+            r.classList.toggle('active-connection');
+            if (!connectionOverlay.classList.contains('activef')){
+                connectionOverlay.classList.add('activef');
             } else {
-                connectionOverlay.classList.remove('active-connection');
+                connectionOverlay.classList.remove('activef');
             }
         }
     })
