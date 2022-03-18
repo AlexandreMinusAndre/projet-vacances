@@ -1,30 +1,37 @@
 /* Connection overlay */
 
-.connection-overlay {
+.overlay-c {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
     background-color: #000000BF;
+}
+
+.connection-overlay {
     position: fixed;
     z-index: 5;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    display: none;
+    top: 30%;
+    left: 20%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    transform: translateY(-300%);
+    transition: 150ms ease;
+    border-radius: 5px;
 }
 
 .connection-overlay .box{
-    background-color: #FFF;
+    z-index: 6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px;
     border-radius: 5px;
-}
-
-.box{
-    transform: translateY(-140%);
-    transition: 150ms ease;
 }
 
 .box h3 {

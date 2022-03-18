@@ -27,7 +27,9 @@ header img {
 
 nav{
     display: flex;
+    align-items: center;
     height: 100%;
+    margin: 0 10px;
 }
 
 nav button {
@@ -35,6 +37,7 @@ nav button {
     color: #B8944F;
     font-size: 15px;
     border: none;
+    height: 2.3rem;
     background: none;
     padding: 5px 0px;
     width: 170px;
@@ -59,6 +62,7 @@ nav button:hover{
     color: #B8944F;
     font-size: 18px;
     margin: 0;
+    white-space: nowrap;
 }
 
 .user {
@@ -84,7 +88,7 @@ nav button:hover{
     position: absolute;
     background: #fff;
     right: 10px;
-    bottom: -175px;
+    bottom: -110px;
     width: 150px;
     border-radius: 5px;
 }
@@ -96,19 +100,39 @@ nav button:hover{
     transition: ease 150ms;
 }
 
-.menu .profil:hover, .menu .disconnect:hover, .menu .parrain:hover{
+.menu .profil:hover {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #B8944F;
     color: #FFF;
 }
 
-/* .menu .disconnect:hover {
+.menu .disconnect:hover {
     color: #FFF;
-    background-color: #B8944F;
+    background-color: #e70101;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-} */
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-btn{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-btn .line1,
+.mobile-btn .line2,
+.mobile-btn .line3 {
+    margin-bottom: 3px;
+    border: 1px solid #B8944F;
+    width: 20px;
+    height: 1px;
+}
 
 .carousel-item {
     height: 100vh;
@@ -121,12 +145,78 @@ nav button:hover{
     vertical-align: top;
 }
 
+/* Search inputs */
+
+.search-inputs {
+    background-color: #B8944F;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    min-width: 55rem;
+    justify-content: space-between;
+    height: 9rem;
+    position: relative;
+}
+
+.search-inputs div {
+    display: flex;
+    flex-direction: column;
+    margin: auto 15px;
+}
+
+.search-inputs .time {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-inputs .options {
+    flex-direction: row;
+}
+
+.search-inputs label {
+    user-select: none;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: #FFF;
+}
+
+.search-inputs input {
+    width: 50px;
+    height: 30px;
+}
+.search-inputs select {
+    height: 30px;
+}
+
+.search-inputs button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    border: none;
+    color: #B8944F;
+    background-color: #FFF;
+    padding: 5px 10px;
+    min-width: 8rem;
+    border-radius: 50px;
+    margin-right: 20px;
+    transition: ease 150ms;
+}
+
+.search-inputs button:hover {
+    opacity: 70%;
+}
+
+.destination input{
+    width: 150px;
+}
+
 .active {
-    display: inline;
+    display: inline !important;
 }
 
 .activef {
-    display: flex;
+    display: flex !important;
 }
 
 .title-index{
@@ -138,8 +228,7 @@ nav button:hover{
 }
 .card{
     border: 2px solid #B8944F;
-    width: 25rem;
-    text-align: left;
+    width: 15rem;
 }
 .container{
     display: flex;
@@ -169,4 +258,181 @@ footer span {
 
 footer div {
     margin: 20px auto;
+}
+
+
+@media screen and (max-width: 65em) {
+    .search-inputs {
+        min-width: 46rem;
+    }
+}
+
+@media screen and (max-width: 53em) {
+    .best {
+        max-width: 700px;
+        overflow-x: scroll;
+    }
+    .best div:not(.ov){
+        margin: 0 auto;
+        width: 20rem;
+        min-width: 20rem;
+        height: 15rem;
+        margin-right: 20px;
+    }
+    .best div:last-child{
+        margin: 0;
+    }
+    .best .ov {
+        width: 100%;
+        height: 100%;
+    }
+    .best span {
+        right: 30%;
+    }
+    
+}
+
+@media screen and (max-width: 50em) {
+    .search-inputs{
+        display: grid;
+        min-width: 30rem;
+        min-height: 15rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .carousel-item{
+        height: 50vh;
+    }
+    .search-inputs label{
+        top: 0;
+        white-space: nowrap;
+        position: inherit;
+    }
+    .user{
+        display: none;
+    }
+    nav button {
+        display: none;
+    }
+    .ov-mob{
+        position: fixed;
+        z-index: 3;
+        background-color: #00000071;
+        width: 100%;
+        height: 110%;
+        display: none;
+        top: 0px;
+        left: 0px;
+        transition: ease 200ms;
+    }
+    .mobile-menu {
+        position: fixed;
+        z-index: 5;
+        background: none;
+        width: 100%;
+        height: 110%;
+        display: flex;
+        justify-content: end;
+        top: 0px;
+        left: 0px;
+        transform: translateX(110%);
+        transition: 200ms ease;
+    }
+    .box-mobile{
+        z-index: -10;
+        position: relative;
+        background-color: #fff;
+        min-width: 13rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .box-mobile div:not(.close-btn) {
+        padding: 10px 0;
+    }
+    .box-mobile span {
+        font-family: 'Karla', serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0 30px;
+        cursor: pointer;
+        color: #B8944F;
+    }
+    .close-btn {
+        margin-bottom: 50px;
+        width: 4rem;
+        cursor: pointer;
+        padding: 20px;
+        filter: invert(66%) sepia(25%) saturate(784%) hue-rotate(1deg) brightness(87%) contrast(91%);
+    }
+    .mobilenav-active{
+        transform: translateY(0%);
+    }
+    .mobile-btn {
+        display: flex;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 35em) {
+    .search-inputs{
+        min-width: 16rem;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        height: 20rem;
+        border-radius: 5px;
+    }
+    .search-inputs div {
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    .search-inputs button {
+        margin: 0px auto;
+        padding: 5px 15px;
+        max-width: 2rem;
+    }
+    .destination, .options, .time {
+        max-width: 14rem;
+    }
+    .time div,
+    .options div {
+        width: 5rem;
+        min-width: 4rem;
+    }
+    .search-inputs label{
+        text-align: start;
+    }
+    .logo h1 {
+        white-space: normal;
+        text-align: center;
+    }
+    .user{
+        display: none;
+    }
+    nav button {
+        display: none;
+    }
+    .best {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow-x: visible;
+    }
+    .best span {
+        right: 25%;
+    }
+    .best div:not(.ov){
+        width: 16rem;
+        min-width: 10rem;
+        min-height: 10rem;
+        height: 13rem;
+        margin: 0 auto;
+        margin: 5px;
+    }
+    .best div:not(.ov),
+    .best div:last-child {
+        margin: 5px auto;
+    }
+    .ov {
+        margin-top: 0 !important;
+    }
 }
