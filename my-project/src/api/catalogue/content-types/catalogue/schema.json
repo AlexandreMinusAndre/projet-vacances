@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catalogues",
+  "info": {
+    "singularName": "catalogue",
+    "pluralName": "catalogues",
+    "displayName": "Catalogue",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "secteur": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "basse_saison": {
+      "required": true,
+      "min": 1,
+      "type": "decimal"
+    },
+    "moyenne_saison": {
+      "required": true,
+      "min": 1,
+      "type": "decimal"
+    },
+    "haute_saison": {
+      "type": "decimal",
+      "required": true,
+      "min": 1
+    },
+    "m2": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "chambres": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "sdb": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "chef_cuisine": {
+      "type": "enumeration",
+      "enum": [
+        "Forfait sur mesure"
+      ],
+      "required": true
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation",
+      "mappedBy": "catalogue"
+    },
+    "equipement": {
+      "type": "string"
+    }
+  }
+}

@@ -26,10 +26,30 @@
                     <div class="disconnect">Se déconnecter</div>
                 </div>
             </div>
+            <div class="mobile-btn">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-    
     <main>
+        <div class="ov-mob"></div>
+        <div class="mobile-menu">
+            <div class="box-mobile">
+                <div class="close-btn">
+                    <img src="../img/xbut.svg" alt="close button">
+                </div>
+                <div class="accueil">
+                    <span class="default">Accueil</span>
+                </div>
+                <div class="user-mobile">
+                    <span class="profil">Profil</span>
+                </div>
+                <div class="disconnect">
+                    <span>Se déconnecter</span>
+                </div>
+            </div>
         <div class="ticket-overlay" id="hide">
             <div class="box-parrain">
                 <h3>Souhaitez-vous parrainer quelqu'un ?</h3>
@@ -80,44 +100,11 @@
                 <h2>Commencez votre recherche pour un séjour en toute sérénité</h2>
                 <form class="search-inputs">
                     <div class="destination">
+                        <label for="destination">Une idée de nom ?</label>
+                        <input type="text" name="destination" id="destination" placeholder="Nom de la réservation">
+
                         <label for="destination">Ou allez-vous ?</label>
-                        <input type="text" name="destination" id="destination">
-                    </div>
-                    <div class="time">
-                        <div>
-                            <label for="depart">Chef cuisinier</label>
-                            <input type="date" name="depart" id="depart">
-                        </div>
-                        <div>
-                            <label for="arrival">Arrivée</label>
-                            <input type="date" name="arrival" id="arrival">
-                        </div>
-                    </div>
-                    <div class="options">
-                        <div>
-                            <label for="adults">Adultes</label>
-                            <input type="number" name="adults" id="adults">
-                        </div>
-                        <div>
-                            <label for="childs">Enfants</label>
-                            <input type="number" name="childs" id="childs">
-                        </div>
-                        <div>
-                            <label for="rooms">Chambre</label>
-                            <select name="rooms" id="rooms">
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="10">10</option>
-                                <option value="12">12</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="20">20</option>
-                            </select>
-                        </div>
+                        <input type="text" name="destination" id="destination" placeholder="Secteur géographique">
                     </div>
                     <button type="submit">Rechercher</button>
                 </form>

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "Reservation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    },
+    "catalogue": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::catalogue.catalogue",
+      "inversedBy": "reservations"
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "reservation"
+    }
+  }
+}
