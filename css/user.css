@@ -1,10 +1,15 @@
-nav button{
-    cursor: pointer;
-    height: 2.3rem;
-}
-
-.connect {
-    display: none;
+nav button {
+    font-family: 'Gabriela', serif;
+    color: #B8944F;
+    font-size: 15px;
+    border: none;
+    background: none;
+    padding: 5px 0px;
+    width: 170px;
+    border-radius: 50px;
+    border: 2px solid #B8944F;
+    transition: 200ms ease;
+    margin: auto 20px;
 }
 
 /* Main */
@@ -13,7 +18,7 @@ nav button{
     border-bottom: 2px solid #B8944F;
 }
 .info-user{
-    min-width: 16rem;
+    width: 15rem;
     height: 40rem;
     padding: 15px;
     border-right:2px solid #B8944F;
@@ -22,80 +27,52 @@ nav button{
     margin: 20px 0;
 }
 
-.txt-info p {
-    margin: 10px auto;
-}
-
-.user-content{
-    display: flex;
-}
-
 /* Formulaire */
-
 form{
     padding: 15px;
-    width: 100%;
+    position: absolute;
+    top: 33%;
+    left: 33%;
     font-family: 'Gabriela', serif;
 }
 input{
-    position: relative;
     height: 18px;
     width: 15rem;
+    margin: 0.5rem;
     border: 1px solid #333;
     border-radius: 50px;
-    padding: 1rem;
 }
-
-.form-user h2 {
-    margin-bottom: 30px;
-}
-
 .form-user label{
-    z-index: 1;
     font-size: 13px;
     position: absolute;
-    color: #00000075;
+    color: #333;
+    transform: translateY(-50%);
+    padding-top:30px ;
+    padding-left: 10px;
+    transition: all .3s ease-in;
 }
 
-.form-user button{
+.form-user:focus-within label,
+.form-user.active-input label{
+    color: #000;
+    padding-bottom: 32px;
+}
+
+.button-confirm{
     cursor: pointer;
     font-family: 'Gabriela', serif;
     color: #B8944F;
     font-size: 15px;
-    border: 0;
+    border: none;
     background: none;
     padding: 5px 0px;
     width: 170px;
     border-radius: 50px;
     border: 2px solid #B8944F;
-    transition: 150ms ease;
+    transition: 200ms ease;
+    margin: auto 20px;
 }
-.form-user button:hover{
+.button-confirm:hover{
     background: #B8944F;
     color: #fff;
-}
-
-.box-input{
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.floating-input {
-    font-size: 13px;
-    color: #cccccc;
-    position: absolute;
-    pointer-events: none;
-    top: 8px;
-    left: 16px;
-    transition: all 0.1s ease;
-}
-
-input:focus ~ .floating-input,
-input:not(:focus):valid ~ .floating-input {
-    top: -20px;
-    bottom: 0px;
-    left: 0px;
-    font-size: 15px;
-    opacity: 1;
-    color: #404040;
 }
