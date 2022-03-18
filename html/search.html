@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Les vacances chez Gustave</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" alt="logo">
+            <h1>Les Vacances Chez Gustave</h1>
+        </div>
+        <nav>
+            <button>Accueil</button>
+            <button class="connect">Se connecter</button>
+            <div class="user">
+                <img src="../img/userColor.png" alt="User profile">
+                <div class="menu">
+                    <div class="profil">Profil</div>
+                    <div class="disconnect">Se déconnecter</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="search-inputs">
+            <div class="destination">
+                <label for="destination">Où allez-vous ?</label>
+                <select name="destination" id="destination">
+                </select>
+            </div>
+            <div class="time">
+                <div>
+                    <label for="depart">Départ</label>
+                    <input type="date" name="depart" id="depart">
+                </div>
+                <div>
+                    <label for="arrival">Arrivée</label>
+                    <input type="date" name="arrival" id="arrival">
+                </div>
+            </div>
+            <div class="options">
+                <div>
+                    <label for="adults">S.de Bain</label>
+                    <input type="number" name="adults" id="adults">
+                </div>
+                <div>
+                    <label for="childs">m²</label>
+                    <input type="number" name="childs" id="childs">
+                </div>
+                <div>
+                    <label for="rooms">Chambres</label>
+                    <select name="rooms" id="rooms">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Rechercher</button>
+        </form>
+        <div class="search-content">
+            <div class="filter">
+                <div class="box-filter">
+                    <div class="price">
+                        <h2>Prix</h2>
+                        <div class="min-price">
+                            <label for="minPrice">Prix minimum de la location</label>
+                            <input type="number" name="minPrice" id="minPrice">
+                        </div>
+                        <div class="max-price">
+                            <label for="maxPrice">Prix maximum de la location</label>
+                            <input type="number" name="maxPrice" id="maxPrice">
+                        </div>
+                    </div>
+                    <div class="equipment">
+                        <h3>Équipements</h3>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>équipement 1</h4>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>équipement 2</h4>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>équipement 3</h4>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>équipement 4</h4>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <h3>Catégories</h3>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>catégorie 1</h4>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>catégorie 2</h4>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>catégorie 3</h4>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <h4>catégorie 4</h4>
+                        </div>
+                    </div>
+                    <button class="apply-filter">Appliquer les filtres<span>🗸</span></button>
+                </div>
+            </div>
+            <div class="display">
+                <div class="location">
+                    <img src="../img/img1.png" alt="maison">
+                    <div class="text">
+                        <h3>Belle époque</h3>
+                        <p class="desc">
+                            Le faste des Rois. Joséphine de Beauharnais y a résidé
+                        </p>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src="../img/img2.png" alt="maison">
+                    <div class="text">
+                        <h3>Belle époque</h3>
+                        <p class="desc">
+                            Le faste des Rois. Joséphine de Beauharnais y a résidé
+                        </p>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src="../img/img3.png" alt="maison">
+                    <div class="text">
+                        <h3>Belle époque</h3>
+                        <p class="desc">
+                            Le faste des Rois. Joséphine de Beauharnais y a résidé
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div>
+            <span>Copyright &copy; 2022 lesvacanceschezgustave</span>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="module" src="../request/loginRequest.js"></script>
+</body>
+</html>

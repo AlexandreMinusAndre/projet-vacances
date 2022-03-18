@@ -1,0 +1,140 @@
+.connect {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    min-height: 40rem;
+}
+
+.search-inputs{
+    margin: 30px 10px 80px 10px;
+}
+
+.search-content {
+    min-height: 50rem;
+    margin: 10px;
+    display: flex;
+}
+
+.filter {
+    border: 2px solid #B8944F;
+    border-radius: 5px;
+    min-width: 18rem;
+    max-width: 20rem;
+    max-height: 43rem;
+    padding: 25px;
+}
+
+
+.filter h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.filter h4 {
+    margin: 0;
+    margin-left: 10px;
+    font-family: 'Karla', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.filter h4,
+.filter h3{
+    color: #B8944F;
+}
+
+.filter button{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    background: none;
+    border: 2px solid #B8944F;
+    justify-content: center;
+    align-items: center;
+    color: #B8944F;
+    padding: 10px;
+    min-width: 15rem;
+    border-radius: 50px;
+    transition: 150ms ease;
+    margin-top: 20px;
+}
+
+.filter button:hover {
+    background-color: #B8944F;
+    color: #fff;
+}
+
+.filter span {
+    min-width: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.display {
+    margin: 0 0 0 3rem;
+    width: 100%;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price h2,
+.price label {
+    color: #B8944F;
+}
+
+.price label{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.price input {
+    max-width: 10rem;
+    margin-bottom: 10px;
+}
+
+.equipment{
+    padding-bottom: 15px;
+}
+
+.equipment div{
+    max-width: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.equipment h3{
+    margin-top: 15px;
+}
+
+.categories div{
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.location{
+    margin: 0px 0px 30px 0px;
+    display: flex;
+    min-width: 33rem;
+    border: 2px solid #B8944F;
+}
+
+.location img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.text {
+    padding: 1rem;
+}
